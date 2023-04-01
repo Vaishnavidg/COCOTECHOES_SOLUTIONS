@@ -1,6 +1,56 @@
-.welcomeMessage {
-    margin: 120px auto;
-    width: 50%;
-    text-align: left;
-    font-size: 24px;
+.Navbar {
+    background-color: #025FEB;
+    width: 100%;
+    height: 60px;
+    display: flex; /* make the container a flex container */
+    justify-content: center; /* align items horizontally to the center */
+    align-items: center; /* align items vertically to the center */
+    padding-right: 40px;
 }
+.logo {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+    align-items: center;
+    left: 40px;
+  }
+  
+   .topright{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    display: flex; /* make the container a flex container */
+    justify-content: center; /* align items horizontally to the center */
+    align-items: center; /* align items vertically to the center */
+    font-size: 18px;
+    font-family: 'Open Sans';
+    margin-top: 10px;
+    color: white;
+  }
+  
+  .schedule{
+    display: flex; /* make the container a flex container */
+    justify-content: center; /* align items horizontally to the center */
+    align-items: center;
+    margin-right: 40px;
+  }
+  .schedule img{
+    margin:3px
+} 
+
+  .leader{
+    display: flex; /* make the container a flex container */
+    justify-content: center; /* align items horizontally to the center */
+    align-items: center;
+    margin-right: 40px;
+  }
+  .leader img{
+    margin:3px
+} 
+
+
+  
+ 
+
+

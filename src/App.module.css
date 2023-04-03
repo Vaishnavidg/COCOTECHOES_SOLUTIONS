@@ -23,10 +23,10 @@
     display: flex; /* make the container a flex container */
     justify-content: center; /* align items horizontally to the center */
     align-items: center; /* align items vertically to the center */
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Open Sans';
     margin-top: 10px;
-    color: white;
+    color: #FFFFFF;
   }
   
   .schedule{
@@ -48,9 +48,65 @@
   .leader img{
     margin:3px
 } 
+.legue{
+    display: flex; /* make the container a flex container */
+    justify-content: center; /* align items horizontally to the center */
+    align-items: center;
+    margin-top: 60px;
+    font-size: 24px;
+    font-family: 'Open Sans';
+    color: #182C62;
+  }
+/* .table {
+    margin-top: 20px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* height:100vh; */
+    /* width: 600px;; */
+    /* border-collapse: collapse; */
+    /* width:70% ; */
+    /* display: flex; */
+    /* padding: 30; */
+    /* display: flex; make the container a flex container */
+    /* justify-content: center; align items horizontally to the center */
+    /* align-items: center;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    border:1mm solid */
+  /* } */ 
 
-
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    
+  }
   
+  th, td {
+    padding: 12px;
+    text-align: left;
+   
+  }
+  
+  th {
+    background-color: #E4EDF2;
+    /* border: 1px solid #ddd; */
+  }
+  .even {
+    background-color: #F6F7F7;
+  }
+  
+  .odd {
+    background-color: #fff;
+  }
+  
+  table img {
+    max-width: 53px;
+    height: 37px;
+    
+  }
  
 
 

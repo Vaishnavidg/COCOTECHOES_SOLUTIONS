@@ -7,8 +7,32 @@
  * 
  */
 class LeagueService {    
-    
+    LeagueService(){
+        this.access_token = "";
+        this.matches = [];
+    }
+
+    async fetchData() {
+        //1.token
+        let resp;
+//2.data fetch
+        resp = await fetch("http://localhost:3001/api/v1/getAccessToken")
+        let data = await resp.json()
+        this.access_token = data.access_token
+        console.log(this.access_token);
+
+//3.setmatches
+        resp = await 
+        
+        fetch("http://localhost:3001/api/v1/getAllMatches",{headers: {
+            Authorization: `Bearer ${this.access_token}`
+        }})
+        let matchesData = await resp.json();
+        this.setMatches(matchesData.matches)
+    }
+     
     /**
+     * //*constructot: url, matches variable
      * Sets the match schedule.
      * Match schedule will be given in the following form:
      * [
@@ -34,14 +58,20 @@ class LeagueService {
      * 
      * @param {Array} matches List of matches.
      */    
-    setMatches(matches) {}
+    setMatches(matches) {
+        this.matches = matches
+        //3. variable setmatches data store
+    }
 
     /**
      * Returns the full list of matches.
      * 
      * @returns {Array} List of matches.
      */
-    getMatches() {}
+    getMatches() {
+
+        return this.matches
+    }
 
     /**
      * Returns the leaderboard in a form of a list of JSON objecs.
@@ -63,7 +93,7 @@ class LeagueService {
     /**
      * Asynchronic function to fetch the data from the server.
      */
-    async fetchData() {}    
+    
 }
 
 export default LeagueService;

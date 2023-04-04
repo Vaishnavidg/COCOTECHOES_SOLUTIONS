@@ -135,7 +135,7 @@ const Leaderboard = () => {
             ))}
         </tbody>
       </Table>
-      <Footer/>
+      <Footer />
     </>
   );
 };

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import style from "./App.module.css";
+import { Link } from 'react-router-dom';
 
 
 export default class NavScreen extends Component {
@@ -14,11 +15,12 @@ export default class NavScreen extends Component {
           <div className={style.topright}>
             <div className={style.schedule}>
               <img src="Images/schedule.png" alt=" " height={25} />
-              <span>Schedule</span>
+              <Link to="/schedule"><span>Schedule</span></Link>
             </div>
             <div className={style.leader}>
               <img src="Images/leaderboard.png" alt="" height={25} />
-              <span>Leaderboard</span>
+              <Link to="/leaderboard"><span>Leaderboard</span></Link>
+              
             </div>
           </div>
         </header>

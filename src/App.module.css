@@ -2,9 +2,9 @@
     background-color: #025FEB;
     width: 100%;
     height: 60px;
-    display: flex; /* make the container a flex container */
-    justify-content: center; /* align items horizontally to the center */
-    align-items: center; /* align items vertically to the center */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     padding-right: 40px;
 }
 .logo {
@@ -20,18 +20,22 @@
     position: absolute;
     top: 8px;
     right: 16px;
-    display: flex; /* make the container a flex container */
-    justify-content: center; /* align items horizontally to the center */
-    align-items: center; /* align items vertically to the center */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     font-size: 16px;
     font-family: 'Open Sans';
     margin-top: 10px;
     color: #FFFFFF;
   }
+  span{
+    color: #FFFFFF;
+    text-decoration: none;
+  }
   
   .schedule{
-    display: flex; /* make the container a flex container */
-    justify-content: center; /* align items horizontally to the center */
+    display: flex; 
+    justify-content: center; 
     align-items: center;
     margin-right: 40px;
   }
@@ -40,8 +44,8 @@
 } 
 
   .leader{
-    display: flex; /* make the container a flex container */
-    justify-content: center; /* align items horizontally to the center */
+    display: flex; 
+    justify-content: center; 
     align-items: center;
     margin-right: 40px;
   }
@@ -49,8 +53,8 @@
     margin:3px
 } 
 .legue{
-    display: flex; /* make the container a flex container */
-    justify-content: center; /* align items horizontally to the center */
+    display: flex; 
+    justify-content: center; 
     align-items: center;
     margin-top: 60px;
     font-size: 24px;
@@ -77,10 +81,15 @@
   /* } */ 
 
   .table {
+    margin-top: 20px;
     border-collapse: collapse;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 90%;
+    /* max-width: 800px; */
+    margin-left: 40px;
+   margin-right: 40px;
     
   }
   
@@ -98,13 +107,14 @@
     height:40px
     /* border: 1px solid #ddd; */
   }
-  .even {
-    background-color: #F6F7F7;
+  /* .even {
+    background-color: lightgrey;
   }
   
   .odd {
-    background-color: #fff;
-  }
+    background-color: white;
+  } */
+  
   
   table img {
     max-width: 53px;
@@ -128,6 +138,10 @@
   }   
     footer p {
       margin-right: 40px;
+    }
+    .NotFound{
+      width: auto;
+      height: auto;
     }
   
   /* ------------------------------for 750*700 pixels -------------------------- */

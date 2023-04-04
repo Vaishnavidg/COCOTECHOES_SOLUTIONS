@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import style from "./App.module.css";
 
+
 export default class NavScreen extends Component {
   render() {
     return (

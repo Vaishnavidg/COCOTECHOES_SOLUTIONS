@@ -89,9 +89,13 @@
     text-align: left;
    
   }
+  td{
+    height: 70px;
+  }
   
   th {
     background-color: #E4EDF2;
+    height:40px
     /* border: 1px solid #ddd; */
   }
   .even {
@@ -107,6 +111,44 @@
     height: 37px;
     
   }
- 
+  footer{
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #F6F7F7;
+      color:#4B5C68;
+      padding-right: 40px;
+      height: 40px;
+      display: flex; /* make the container a flex container */
+      justify-content: flex-end;/* align items horizontally to the center */
+      align-items: center;
+     
+      /* margin-right: 40px; */
+   
+  }   
+    footer p {
+      margin-right: 40px;
+    }
+  
+  /* ------------------------------for 750*700 pixels -------------------------- */
+  @media (max-width: 750px) {
+    table th:nth-child(2),
+    table td:nth-child(2) {
+      display: none;
+    }
+  }
 
+   /* ------------------------------for 500*700 pixels -------------------------- */
+   @media (max-width: 500px) {
+    table th:nth-child(1),
+    table td:nth-child(1), 
+    table th:nth-child(2),
+    table td:nth-child(2) {
+      display: none;
+    }
+  }
+
+
+
+          
 

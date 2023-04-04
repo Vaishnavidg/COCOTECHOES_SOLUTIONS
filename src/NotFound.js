@@ -6,7 +6,7 @@ export default class NotFound extends Component {
     return (
         <>
          <NavScreen/>
-        <img src="public/Images/404.png" alt=' '/>
+        <img src="public/Images/404.png" alt=' 'width={900}/>
         </>
      
     )

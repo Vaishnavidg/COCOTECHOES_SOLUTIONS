@@ -22,7 +22,7 @@ export default function TableScreen() {
         <thead>
           <tr>
             <th>Date/Time</th>
-            <th>Stadium</th>
+            <th className="stadium">Stadium</th>
             <th colSpan="3">Home Team</th>
             <th colSpan="3">Away Team</th>
           </tr>
@@ -62,6 +62,8 @@ export default function TableScreen() {
           ))}
         </tbody>
       </Table>
+      {/* ------------------------------for 750*700 pixels -------------------------- */}
+     
     </>
   );
 }
